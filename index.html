@@ -6,7 +6,7 @@
   <title>Image Converter</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -14,10 +14,8 @@
     <h1>Image Converter</h1>
     <p>Upload image and compress image</p>
 
-    <!-- Upload -->
-    <input type="file" id="imageInput" accept="image/*">
+    <input type="file" id="imageInput">
 
-    <!-- Size -->
     <div class="size-box">
       <input type="number" id="targetSize" placeholder="Target size">
       <select id="sizeUnit">
@@ -26,19 +24,14 @@
       </select>
     </div>
 
-    <!-- Button -->
     <button id="compressBtn">Compress Image</button>
 
     <p id="status"></p>
+    <button id="downloadBtn" style="display:none;">Download Image</button>
 
-    <!-- Download -->
-    <button id="downloadBtn">⬇ Download Image</button>
-
-    <!-- Preview -->
     <div id="preview"></div>
   </div>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
