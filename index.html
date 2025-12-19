@@ -1,12 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Converter</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
   <div class="container">
     <h1>Image Converter</h1>
     <p>Upload image and compress image</p>
 
-    <!-- Image Upload -->
+    <!-- Upload -->
     <input type="file" id="imageInput" accept="image/*">
 
-    <!-- Target Size -->
+    <!-- Size -->
     <div class="size-box">
       <input type="number" id="targetSize" placeholder="Target size">
       <select id="sizeUnit">
@@ -15,27 +26,13 @@
       </select>
     </div>
 
-    <!-- Compress Button -->
+    <!-- Button -->
     <button id="compressBtn">Compress Image</button>
 
-    <!-- Status -->
-    <p id="status" style="text-align:center;"></p>
+    <p id="status"></p>
 
-    <!-- Download Button -->
-    <button id="downloadBtn" style="
-      display:none;
-      width:100%;
-      margin-top:12px;
-      background:#28a745;
-      color:#fff;
-      padding:12px;
-      border:none;
-      border-radius:6px;
-      font-size:16px;
-      font-weight:bold;
-    ">
-      Download Image
-    </button>
+    <!-- Download -->
+    <button id="downloadBtn">⬇ Download Image</button>
 
     <!-- Preview -->
     <div id="preview"></div>
@@ -44,3 +41,4 @@
   <!-- JS -->
   <script src="script.js"></script>
 </body>
+</html>
