@@ -399,3 +399,58 @@ button:active {
   font-size: 13px;
   color: #6b7280;
 }
+/* ===============================
+   FAQ SECTION
+================================ */
+
+.faq-section {
+  max-width: 900px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #e5e7eb;
+}
+
+.faq-item {
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 14px;
+  margin-bottom: 15px;
+  padding: 18px 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e7eb;
+  list-style: none;
+}
+
+.faq-item summary::marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  font-size: 20px;
+  color: #3b82f6;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
