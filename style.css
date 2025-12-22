@@ -197,3 +197,41 @@ button:active {
     transform: translateY(0);
   }
 }
+/* ===============================
+   SEO SECTION (CLEAN & PREMIUM)
+================================ */
+.seo-section {
+  max-width: 900px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+  color: #cbd5e1;
+}
+
+.seo-section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.seo-section h3 {
+  font-size: 20px;
+  margin: 30px 0 12px;
+  color: #e5e7eb;
+}
+
+.seo-section ul {
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+
+.seo-section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.seo-section p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
