@@ -199,3 +199,62 @@ button:active {
  .seo-text {
   animation: fadeUp 0.6s ease-out;
 }
+/* ===============================
+   WORKING STEPS SECTION
+================================ */
+
+.working-steps {
+  margin-top: 50px;
+  text-align: center;
+  animation: fadeUp 0.8s ease;
+}
+
+.working-steps h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.step-box {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 16px;
+  padding: 22px;
+  position: relative;
+  box-shadow: 0 0 0 rgba(59,130,246,0);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.step-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(59,130,246,0.25);
+  border-color: rgba(59,130,246,0.4);
+}
+
+.step-number {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(59,130,246,0.15);
+}
+
+.step-box h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.step-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #9ca3af;
+   }
