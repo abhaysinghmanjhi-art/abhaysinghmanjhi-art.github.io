@@ -11,14 +11,7 @@
 
 body {
   min-height: 100vh;
-  background: radial-gradient(
-      circle at top,
-      #1e293b 0%,
-      #020617 60%
-    );
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: radial-gradient(circle at top, #1e293b 0%, #020617 60%);
   color: #e5e7eb;
   padding: 20px;
 }
@@ -34,11 +27,10 @@ body {
   padding: 28px;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-
   box-shadow:
     0 30px 60px rgba(0, 0, 0, 0.7),
     inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-
+  margin: 0 auto;
   animation: fadeUp 0.6s ease-out;
 }
 
@@ -50,7 +42,6 @@ h1 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 6px;
-  letter-spacing: 0.3px;
 }
 
 p {
@@ -110,11 +101,7 @@ select:focus {
 button {
   width: 100%;
   margin-top: 12px;
-  background: linear-gradient(
-    135deg,
-    #3b82f6,
-    #2563eb
-  );
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   border: none;
   border-radius: 12px;
   padding: 14px;
@@ -135,45 +122,67 @@ button:active {
 }
 
 /* ===============================
-   DOWNLOAD BUTTON
+   SEO TEXT
 ================================ */
-#downloadBtn {
-  background: linear-gradient(
-    135deg,
-    #22c55e,
-    #16a34a
-  );
-  display: none;
-}
-
-/* ===============================
-   STATUS TEXT
-================================ */
-#status {
-  margin-top: 12px;
-  font-size: 13px;
-  opacity: 0.75;
-  text-align: center;
-}
-
-/* ===============================
-   NOTE / TRUST TEXT
-================================ */
-.note {
-  margin-top: 14px;
-  font-size: 13px;
-  text-align: center;
-  opacity: 0.6;
-}
-
-/* ===============================
-   PREVIEW
-================================ */
-#preview img {
-  max-width: 100%;
-  border-radius: 12px;
+.seo-text {
   margin-top: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+  color: #9ca3af;
+  text-align: center;
+  line-height: 1.6;
+  animation: fadeUp 0.6s ease-out;
+}
+
+/* ===============================
+   WORKING STEPS (HTML SAME)
+================================ */
+.steps-section {
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeUp 0.8s ease;
+}
+
+.steps-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.step-box {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.step-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(59, 130, 246, 0.25);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.step-number {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(59, 130, 246, 0.18);
+}
+
+.step-box h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #e5e7eb;
+}
+
+.step-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5f5;
 }
 
 /* ===============================
@@ -189,72 +198,3 @@ button:active {
     transform: translateY(0);
   }
 }
-.seo-text {
-  margin-top: 16px;
-  font-size: 13px;
-  color: #9ca3af;
-  text-align: center;
-  line-height: 1.6;
-}
- .seo-text {
-  animation: fadeUp 0.6s ease-out;
-}
-/* ===============================
-   WORKING STEPS SECTION
-================================ */
-
-.working-steps {
-  margin-top: 50px;
-  text-align: center;
-  animation: fadeUp 0.8s ease;
-}
-
-.working-steps h2 {
-  font-size: 26px;
-  margin-bottom: 25px;
-  color: #ffffff;
-}
-
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.step-box {
-  background: linear-gradient(145deg, #0f172a, #020617);
-  border-radius: 16px;
-  padding: 22px;
-  position: relative;
-  box-shadow: 0 0 0 rgba(59,130,246,0);
-  transition: all 0.35s ease;
-  border: 1px solid rgba(255,255,255,0.05);
-}
-
-.step-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(59,130,246,0.25);
-  border-color: rgba(59,130,246,0.4);
-}
-
-.step-number {
-  position: absolute;
-  top: 15px;
-  right: 18px;
-  font-size: 42px;
-  font-weight: 700;
-  color: rgba(59,130,246,0.15);
-}
-
-.step-box h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
-.step-box p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #9ca3af;
-   }
